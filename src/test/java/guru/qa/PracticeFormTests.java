@@ -32,7 +32,7 @@ public class PracticeFormTests {
     $("#subjectsInput").setValue("m");
     $(byText("Chemistry")).click();
     $("#hobbiesWrapper").$(byText("Reading")).click();
-    $("#uploadPicture").uploadFromClasspath("./img/1.jpg");
+    $("#uploadPicture").uploadFromClasspath("img/1.jpg");
     $("#currentAddress").val("Москва, Южнопортовый проезд, д. 5, к. 2А");
     $("#state").scrollIntoView(true).click();
     $("#stateCity-wrapper").$(byText("Haryana")).click();

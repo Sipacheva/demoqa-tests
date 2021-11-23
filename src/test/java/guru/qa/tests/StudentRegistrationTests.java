@@ -1,4 +1,4 @@
-package guru.qa;
+package guru.qa.tests;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
@@ -8,13 +8,9 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
-public class PracticeFormTests {
+public class StudentRegistrationTests extends TestBase {
 
-  @BeforeAll
-  static void beforeAll() {
-    Configuration.baseUrl = "https://demoqa.com";
-    Configuration.startMaximized = true;
-  }
+
 
   @Test
   void fillFormTest() {

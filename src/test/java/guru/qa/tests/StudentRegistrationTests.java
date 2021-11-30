@@ -1,18 +1,19 @@
 package guru.qa.tests;
 
-import com.codeborne.selenide.Configuration;
-import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selectors.*;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selectors.byText;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
 
 public class StudentRegistrationTests extends TestBase {
 
 
 
   @Test
+  @Disabled
   void fillFormTest() {
     open("/automation-practice-form");
     $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));

@@ -1,11 +1,15 @@
 package guru.qa.tests;
 
+import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.Test;
+
 
 public class StudentRegistrationWithPageObjectsTests extends TestBase {
 
   @Test
   void fillFormTest() {
+    SelenideLogger.addListener("allure", new AllureSelenide());
 
     registrationPage.openPage();
     registrationPage.typeFirstName(testData.firstName)

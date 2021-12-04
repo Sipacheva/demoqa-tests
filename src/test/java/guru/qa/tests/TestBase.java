@@ -27,7 +27,7 @@ public class TestBase {
     Configuration.startMaximized = true;
     String login = credentials.login();
     String password = credentials.password();
-    String url = credentials.url();
+    String url = System.getProperty("url", "selenoid.autotests.cloud/wd/hub/");
     Configuration.remote = format("https://%s:%s@%s", login, password, url);
 
     DesiredCapabilities capabilities = new DesiredCapabilities();

@@ -36,6 +36,7 @@ dependencies {
 }
 
 tasks.withType(Test) {
+    systemProperties(System.getProperties())
     useJUnitPlatform()
 
     testLogging {
@@ -49,4 +50,10 @@ tasks.withType(Test) {
 
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
+}
+
+task properties_tests(type: Test) {
+    useJUnitPlatform {
+        includeTags "properties"
+    }
 }

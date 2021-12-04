@@ -9,7 +9,6 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Tag;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import static java.lang.String.format;
@@ -19,7 +18,6 @@ public class TestBase {
   RegistrationPage registrationPage = new RegistrationPage();
   TestData testData = new TestData();
 
-  @Tag("properties")
   @BeforeAll
   static void beforeAll() {
     CredentialsConfig credentials =

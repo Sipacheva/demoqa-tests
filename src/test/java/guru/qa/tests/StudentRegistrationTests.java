@@ -10,8 +10,6 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class StudentRegistrationTests extends TestBase {
 
-
-
   @Test
   @Disabled
   void fillFormTest() {

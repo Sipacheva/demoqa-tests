@@ -1,10 +1,12 @@
 package guru.qa.tests;
 
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 
 public class StudentRegistrationWithPageObjectsTests extends TestBase {
 
+  @Tag("properties")
   @Test
   void fillFormTest() {
     registrationPage.openPage();
